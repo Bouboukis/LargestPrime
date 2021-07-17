@@ -24,6 +24,8 @@ public class LargestPrime {
                 }
             }
         }
+
+       // If there is a combination of a prime number to give the value we need will return it, else the return is -1
         if (maxPrime != 0){
             return maxPrime;
         }
