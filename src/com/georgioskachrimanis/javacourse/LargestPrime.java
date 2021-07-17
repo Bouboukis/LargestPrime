@@ -24,7 +24,11 @@ public class LargestPrime {
                 }
             }
         }
-        return maxPrime;
+        if (maxPrime != 0){
+            return maxPrime;
+        }
+
+        return -1;
 
 
     }
