@@ -14,3 +14,22 @@ Then if that is true there will be a check if the values of i, j are prime.
 Finally, there will be a chek which prime number of i or j is greater in each loop and will be save as the new maxPrime.
 
 _I know it is not the most efficient code in the world, but it is my first try._
+
+_**Here is code doing the same job after some google search.**_
+
+    public static int getLargestPrime(int number) {
+
+        if (number < 2) {
+            return -1;
+        }
+
+        for (int i = 2; i < number ; i++) {
+            if ((number % i) == 0) {
+                number /= i;
+                i--;
+            }
+        }
+        return number;
+    }
+
+Much faster and with less lines.

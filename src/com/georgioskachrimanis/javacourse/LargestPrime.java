@@ -13,8 +13,8 @@ public class LargestPrime {
         // of the combinations produce the largest prime number.
         // I was thinking to make the for loop run only prime numbers loop but this way the solution will be wrong
 
-        for (int i = 0; i < value/2; i++) {
-            for (int j = 1; j < value/2; j++) {
+        for (int i = 0; i < value; i++) {
+            for (int j = 1; j < value; j++) {
                 if (i * j == value) {
                     if (isPrime(j)) {
                         if (maxPrime < j) {
